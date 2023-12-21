@@ -1,0 +1,273 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  position: fixed;
+  background-color: #e5005c;
+  color: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 55px;
+  align-items: center;
+  justify-content: end;
+  z-index: 1000;
+  min-height: 47px;
+  width: 100%;
+  font-family: 'blender-regular', 'south web', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.header-not-fixed {
+  position:absolute;
+  display: flex;
+  column-gap: 25px;
+  background-color: #e5005c;
+  color: white;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 55px;
+  align-items: center;
+  justify-content: end;
+  z-index: 1000;
+  min-height: 47px;
+  width: 100%;
+  font-family: 'blender-regular', 'south web', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+
+.on-div{
+  padding-right: 100px;
+}
+
+.off-div{
+  padding-right: 100px;
+
+}
+
+.on-button {
+  background-color: #95022e;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  margin-right: 150px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  cursor: pointer;
+}
+
+.off-button{
+  padding-left: 2px;
+  padding-right: 60px;
+  background-color: #95022e;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  margin-right: 150px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  cursor: pointer;
+}
+
+
+
+.pin-off-icon {
+  width: 24px;
+  padding-right: 5px;
+}
+
+
+.pin-on-icon {
+  width: 24px;
+  padding-left: 5px;
+}
+
+
+.date{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.time{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.all-games{
+  display: flex;
+}
+.other-games{
+  display: flex;
+}
+
+.game1, .game2, .game3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding-left: 50px;
+}
+
+
+.game-time{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.game-score{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
+  font-size: 15px;
+}
+
+
+.all-result-div {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  color: white;
+  background: #910029;
+  font-size: 12pt;
+  font-weight: bold;
+  border: 0;
+  box-shadow: none;
+  padding: 4px 8px 4px 7px;
+  left: 130px;
+  bottom: 10px;
+  border-radius: 25px;
+  border: white 3px solid;
+  top: 13px;
+  cursor: pointer;
+}
+
+.all-result-link > a {
+  color: white;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.arrow-l{
+  padding-right: 5px;
+  cursor: pointer;
+  
+}
+
+.btn-prev{
+  padding-right: 20px;
+  cursor: pointer;
+}
+.arrow-btn-img{
+  width: 8px;
+}
+
+
+
+.sports-div{
+  /* position: absolute;
+  top: 60px;
+  right: 300px; */
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+
+.first-ul {
+  list-style-type: none;
+  display: flex;
+
+}
+
+li {
+  margin: 0 0 0 15px;
+  display: flex;
+}
+
+
+
+.sports-link{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+.buttons2{
+  /* display: inline-block;
+  position: absolute;
+  top: 88px;
+  right: 300px; */
+  display: flex;
+
+}
+
+.second-ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.second-ul > li {
+  margin: 0 0 0 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  sans-serif;
+  font-weight: bold;
+
+}
+
+
+
+
+
+element.style {
+  background-image: url(https://www.sport5.co.il/Sip_Storage/FILES/9/1178029.png);
+}
+
+
+#header.flat strong.logo {
+  position: absolute;
+  z-index: 999;
+  margin: -4px 0px 0px -11px;
+}
+.logo {
+  position: absolute;
+  right: 180px;
+  top: 55px;
+  background: url(images/logo.png?Q=1) 0px -162px no-repeat;
+  width: 85px;
+  height: 80px;
+  overflow: hidden;
+  text-indent: -9999px;
+  margin: -2px 0px 0px -11px;
+}
+b, strong {
+  font-weight: 700;
+}
+
+
