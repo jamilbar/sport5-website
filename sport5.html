@@ -1,0 +1,4263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sport5</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/he/thumb/e/ec/Sport5.svg/768px-Sport5.svg.png?20210807191223"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style/sport5.CSS" />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body
+    style="
+      padding-top: 117px;
+      padding-left: 300px;
+      padding-right: 350px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    "
+  >
+    <div class="header header-js">
+      <div class="all-result-div">
+        <div class="arrow-l">&lt;</div>
+        <div class="all-result-link">
+          <a href="https://www.sport5.co.il/html/pages/GamesResults.html"
+            >כל התוצאות</a
+          >
+        </div>
+      </div>
+
+      <div class="btn-prev" onclick="reversegames()">
+        <img class="arrow-btn-img" src="images/arrow_l_white.png" />
+      </div>
+
+      <div class="all-games">
+        <div class="game1">
+          <div class="game-time">Q4</div>
+          <div class="game-score">הפועל כפר קאסם 78 - 101 עירוהי רעננה</div>
+        </div>
+        <div class="game2">
+          <div class="game-time">מחצית</div>
+          <div class="game-score">הפועל כפר סבא 0 - 1 מכבי הרצליה</div>
+        </div>
+        <div class="game3">
+          <div class="game-time">הסתיים</div>
+          <div class="game-score">מכבי פתח תקווה 4 - 0 הפועל חיפה</div>
+        </div>
+      </div>
+
+      <div class="btn-prev" onclick="onemoreresult()">
+        <img class="arrow-btn-img" src="images/arrow_r_white.png" />
+      </div>
+
+      <div>
+        <div class="date"></div>
+        <div class="time"></div>
+      </div>
+
+      <div class="on-div on-div-js">
+        <button class="on-button on-button-js" onclick="onfunc()">
+          <div>ON</div>
+          <div class="pin-on-icon-div">
+            <img class="pin-on-icon" src="images/pin-red.png" />
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <strong
+      class="logo"
+      style="
+        background-image: url(https://www.sport5.co.il/Sip_Storage/FILES/9/1178029.png);
+      "
+      ><a
+        title="אתר ערוץ הספורט"
+        href="https://www.sport5.co.il"
+        alt="אתר ערוץ הספורט"
+      ></a
+    ></strong>
+    <div class="sports-div">
+      <ul class="first-ul">
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            פודאקסטים
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            גימיינג
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            רכב
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            תוצאות
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            VOD
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            ענפים נוספים
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            NBA
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            כדורסל
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            כדורגל עולמי
+          </a>
+        </li>
+        <li>
+          <a
+            class="sports-link"
+            href="https://www.sport5.co.il/world.aspx?FolderID=4439"
+          >
+            כדורגל ישראלי
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="buttons2">
+      <ul class="second-ul">
+        <li>
+          <a
+            class="link"
+            href="https://www.sport5.co.il/html/pages/broadcastsheet.html"
+          >
+            לוח שידורם
+          </a>
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://doublepass.sport5.co.il/?openExternal=true/"
+          >
+            דאבל פס
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://t.me/sport5israel"> TELEGRAM </a>
+        </li>
+        <li>
+          <a class="link" href="https://radio.sport5.co.il/#!/home"> 5RADIO </a>
+        </li>
+        <li>
+          <a class="link" href="https://www.sport5.co.il/liga.aspx?FolderID=44">
+            ליגת העל
+          </a>
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://fantasyleague.sport5.co.il/?openExternal=true"
+          >
+            פנטזי אלופות
+          </a>
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://dreamteam.sport5.co.il/?openExternal=true%2F"
+          >
+            לוח החלומות
+          </a>
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://www.whatsapp.com/channel/0029VaEC7V2L2AU0OuADBG0L"
+          >
+            !חדש ערוץ הספורט בווצאפ
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="line"></div>
+
+    <div style="margin-top: 20px">
+      <a href="https://site.sport5.co.il/HEINEKEN_GOAL" target="_blank">
+        <img
+          src="https://tpc.googlesyndication.com/simgad/3686482430078330276"
+          style="width: 100%"
+        />
+      </a>
+    </div>
+    <div class="main">
+      <div class="left-side">
+        <div style="margin-top: 15px">
+          <a href="https://bit.ly/3t5q6Jx" target="_blank"
+            ><img
+              src="https://www.sport5.co.il/Sip_Storage/FILES/9/1336059.jpg"
+          /></a>
+        </div>
+        <div class="news-title">חדר חדשות</div>
+        <div class="news-content">
+          <div class="news-row-room">
+            <div class="first-text">
+              <div class="writer-name-time">
+                <div class="writer-time">18:20</div>
+                <div class="writer-name">דני פורת</div>
+              </div>
+              <div class="content">
+                רשמית: באיירן מינכן רכשה את בראיין סראגוסה, הכישרון של גרנאדה,
+                שיצטרף אליה בסיום העונה
+              </div>
+            </div>
+            <div>
+              <div class="writer-profile-div">
+                <img class="writer-profile" src="images/דני פורת.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="news-row-room">
+            <div class="text">
+              <div class="writer-name-time">
+                <div class="writer-time">18:35</div>
+                <div class="writer-name">דני דניאלי</div>
+              </div>
+              <div class="content">
+                דיווח בבוסניה: במדינה בוחנים אפשרות לאזרח את כוכב מכבי ת״א,
+                ווייד בולדווין
+              </div>
+            </div>
+            <div class="writer-profile-div">
+              <img class="writer-profile" src="images/דני דניאלי.jpg" />
+            </div>
+          </div>
+          <div class="news-row-room">
+            <div class="text">
+              <div class="writer-name-time">
+                <div class="writer-time">19:45</div>
+                <div class="writer-name">רועי ויינברג</div>
+              </div>
+              <div class="content">
+                ג'וש ניבו נבחר לשחקן המחזור ביורוליג, לצד שאבון שילדס ממילאנו
+                וקווין פאנטר מפרטיזן
+              </div>
+            </div>
+            <div class="writer-profile-div">
+              <img
+                class="writer-profile"
+                src="https://aknewsflash.sport5.co.il/images/1637227328877-file.jpg"
+              />
+            </div>
+          </div>
+          <div class="last-row">
+            <button class="more-news-button">
+              <a style="color: white" href="https://www.sport5.co.il/NewsRoom"
+                >עוד בחדשות</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div style="margin-top: 10px; margin-bottom: 10px">
+          <div>
+            <a
+              href="https://sales.aig.co.il/auto/?utm_source=taboola&utm_medium=cpc&utm_campaign=Taboola_Car_Insurance_Desktop_New&tblci=GiDqgXJ1TgVPPp1lyTdjQVPOWFjhZm6KFMvMi_aKSuz3xCCkk1Moy-fRsrTfptOMAQ#tblciGiDqgXJ1TgVPPp1lyTdjQVPOWFjhZm6KFMvMi_aKSuz3xCCkk1Moy-fRsrTfptOMAQ"
+              target="_blank"
+            >
+              <img
+                src="https://images.taboola.com/taboola/image/fetch/h_240,w_360,c_pad,b_white/http%3A//cdn.taboola.com/libtrc/static/thumbnails/b4210cc895f7eb369eee19358ff5b026.jpg"
+                width="299px"
+                height="199px"
+              />
+            </a>
+          </div>
+          <div class="ad-text">
+            הגיע הזמן לחדש את ביטוח הרכב? קבלו עכשיו הצעה
+          </div>
+          <div class="branding">AIG</div>
+          <div class="sponser-taboola">
+            <a
+              href="https://popup.taboola.com/he/?template=colorbox&utm_source=sport5-sport5&utm_medium=referral&utm_content=thumbnails-hp-left:HP%20Left%20Rail:"
+              target="_blank"
+              >Sponserd Links by Taboola</a
+            >
+          </div>
+        </div>
+
+        <div class="video-title">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="text-live-side">וידאיו</div>
+        </div>
+
+        <div class="video-holder">
+          <div class="top-video">
+            <a
+              href="https://vod.sport5.co.il/?Vc=11490&Vi=456214"
+              target="_blank"
+            >
+              <img
+                class="maccabi-img"
+                src="https://www.sport5.co.il/Sip_Storage/FILES/0/Size304X227/1340180.jpg"
+              />
+              <img
+                class="video-holder-play-main"
+                src="https://www.sport5.co.il/images/videosmallitem.png"
+              />
+            </a>
+            <div class="descHomepageLeftSide">
+              <a
+                href="https://vod.sport5.co.il/?Vc=11490&Vi=456214"
+                target="_blank"
+                >זהבי הכריע: מכבי ת"א ניצחה 0:1 את הפועל ב"ש</a
+              >
+            </div>
+          </div>
+          <div class="bottom-video">
+            <div class="first-video">
+              <a
+                href="https://vod.sport5.co.il/?Vc=147&Vi=455202"
+                target="_blank"
+              >
+                <img
+                  class="bottom-video-img"
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/5/Size272x202/1337235.jpg"
+                />
+                <img
+                  class="video-holder-play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </a>
+              <div class="descHomepageLeftSide">
+                <a
+                  href="https://vod.sport5.co.il/?Vc=147&Vi=455202"
+                  target="_blank"
+                  style="direction: rtl"
+                >
+                  לייקרס גברה על אינדיאנה וזכתה בגביע ה - NBA</a
+                >
+              </div>
+            </div>
+            <div class="second-video">
+              <a
+                href="https://vod.sport5.co.il/?Vc=147&Vi=455602"
+                target="_blank"
+              >
+                <img
+                  class="bottom-video-img"
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/2/Size272x202/1338402.jpg"
+                />
+                <img
+                  class="video-holder-play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </a>
+              <div class="descHomepageLeftSide">
+                <a
+                  href="https://vod.sport5.co.il/?Vc=147&Vi=455602"
+                  target="_blank"
+                  >דו קרב אדיר: 37 דלייויס , 30 נק' לוומבניאמה</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 15px">
+          <a href="https://bit.ly/3t5q6Jx" target="_blank"
+            ><img
+              src="https://www.sport5.co.il/Sip_Storage/FILES/9/1336059.jpg"
+          /></a>
+        </div>
+
+        <div style="margin-top: 15px">
+          <a href="https://quiz.sport5.co.il/" target="_blank"
+            ><img
+              src="https://www.sport5.co.il/Sip_Storage/FILES/4/Size304X64/1290824.jpg"
+          /></a>
+        </div>
+        <div class="live">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="second-div">
+            <div class="day"></div>
+            <div>|</div>
+            <div class="text-live-side">שידורים ישירים</div>
+          </div>
+        </div>
+
+        <div class="live-content">
+          <div class="holder">
+            <div class="scrollable-area-wrapper">
+              <div class="scrollable-area">
+                <a
+                  class="text-blue"
+                  href="https://www.sport5.co.il/html/pages/broadcastsheet.html"
+                >
+                  <div sort-order="SPORT5_CHANNEL">
+                    <div id="thFirstCol" style="background-color: #7f7f7f">
+                      <div class="followMeBar">
+                        <img
+                          class="sports-profile"
+                          src="https://www.sport5.co.il/Images/channels/5sport.png"
+                        />
+                      </div>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">18:00</div>
+                          </td>
+                          <td class="secondCol">חדשות הספורט: מהדורת הערב</td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">18:25</div>
+                          </td>
+                          <td class="secondCol">
+                            ליגה לאומית בכדורסל: מכבי רחובות - אליצור נתניה,
+                            מחזור 5
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">20:30</div>
+                          </td>
+                          <td class="secondCol">אולפן יורוליג</td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">21:05</div>
+                          </td>
+                          <td class="secondCol">
+                            יורוליג: מכבי ת"א - באסקוניה, מחזור 15
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">23:00</div>
+                          </td>
+                          <td class="secondCol">
+                            חדשות הספורט: המהדורה המרכזית
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">23:45</div>
+                          </td>
+                          <td class="secondCol">חמישיות</td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">05:00</div>
+                          </td>
+                          <td class="secondCol">
+                            NBA: בוסטון - גולדן סטייט, משולב
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">05:00</div>
+                          </td>
+                          <td class="secondCol">
+                            NBA: פורטלנד - פיניקס, משולב
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div sort-order="5PLUS_CHANNEL">
+                    <div class="followMeBar" style="background-color: #7f7f7f">
+                      <div>
+                        <img
+                          src="https://www.sport5.co.il/Images/channels/5plus.png"
+                          width="100"
+                          height="15"
+                          alt="ספורט 5+"
+                          title="ספורט 5+"
+                        />
+                        <span class="channel-num"></span>
+                      </div>
+                    </div>
+
+                    <table>
+                      <tbody>
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">17:55</div>
+                          </td>
+                          <td class="secondCol">
+                            ליגת האלופות של אפריקה: בלואיזידאד - אל אהלי, שלב
+                            הבתים - מחזור 4
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">21:00</div>
+                          </td>
+                          <td class="secondCol">ארץ הכדורגל</td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">23:00</div>
+                          </td>
+                          <td class="secondCol">
+                            חדשות הספורט: המהדורה המרכזית
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">23:45</div>
+                          </td>
+                          <td class="secondCol">חמישיות</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div sort-order="5LIVE_CHANNEL">
+                    <div class="followMeBar" style="background-color: #7f7f7f">
+                      <div>
+                        <img
+                          src="https://www.sport5.co.il/Images/channels/5live.png"
+                          width="100"
+                          height="15"
+                          alt="ספורט 5 Live"
+                          title="ספורט 5 Live"
+                        />
+
+                        <span class="channel-num"></span>
+                      </div>
+                    </div>
+
+                    <table>
+                      <tbody>
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">18:45</div>
+                          </td>
+                          <td class="secondCol">
+                            ליגת העל בכדורגל: הפועל פ"ת - בני ריינה, מחזור 10
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">20:55</div>
+                          </td>
+                          <td class="secondCol">
+                            יורוליג: ערב היורוליג - מחזור 15
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">03:00</div>
+                          </td>
+                          <td class="secondCol">WWE: NXT LIVE</td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">05:30</div>
+                          </td>
+                          <td class="secondCol">
+                            ליגת ההוקי האמריקאית NHL: סן חוזה - לוס אנג'לס
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div sort-order="5_STARS">
+                    <div class="followMeBar" style="background-color: #7f7f7f">
+                      <div>
+                        <img
+                          src="https://www.sport5.co.il/Images/channels/5stars-white.png"
+                          width="100"
+                          height="15"
+                          alt="5_STARS"
+                          title="5_STARS"
+                        />
+                        <span class="channel-num"></span>
+                      </div>
+                    </div>
+
+                    <table>
+                      <tbody>
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">19:55</div>
+                          </td>
+                          <td class="secondCol">
+                            יורוליג: הכוכב האדום בלגרד - ריאל מדריד, מחזור 15
+                          </td>
+                        </tr>
+
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">02:00</div>
+                          </td>
+                          <td class="secondCol">
+                            ליגת ההוקי האמריקאית NHL: קרוליינה - לאס וגאס
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div sort-order="S1_CHANNEL">
+                    <div class="followMeBar" style="background-color: #7f7f7f">
+                      <div>
+                        <img
+                          src="https://www.sport5.co.il/Images/channels/S1_channel.png"
+                          width="100"
+                          height="15"
+                          alt="ספורט 1"
+                          title="ספורט 1"
+                        />
+                        <span class="channel-num"></span>
+                      </div>
+                    </div>
+
+                    <table>
+                      <tbody>
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">20:00</div>
+                          </td>
+                          <td class="secondCol">
+                            אליפות העולם למועדונים אורוואה רד דיאמונדס - מנצ'סטר
+                            סיטי, חצי גמר
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div sort-order="S3_CHANNEL">
+                    <div class="followMeBar" style="background-color: #7f7f7f">
+                      <div>
+                        <img
+                          src="https://www.sport5.co.il/Images/channels/S3_CHANNEL.png"
+                          width="100"
+                          height="15"
+                          alt="ספורט 3"
+                          title="ספורט 3"
+                        />
+                        <span class="channel-num"></span>
+                      </div>
+                    </div>
+
+                    <table>
+                      <tbody>
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">19:30</div>
+                          </td>
+                          <td class="secondCol">
+                            ליגת העל בכדורגל: הפועל ירושלים - הפועל חדרה, מחזור
+                            10
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div sort-order="S4_CHANNEL">
+                    <div class="followMeBar" style="background-color: #7f7f7f">
+                      <div>
+                        <img
+                          src="https://www.sport5.co.il/Images/channels/S4_CHANNEL.png"
+                          width="100"
+                          height="15"
+                          alt="ספורט 4"
+                          title="ספורט 4"
+                        />
+                        <span class="channel-num"></span>
+                      </div>
+                    </div>
+
+                    <table>
+                      <tbody>
+                        <tr class="heding">
+                          <td class="oneCol">
+                            <div class="date">20:00</div>
+                          </td>
+                          <td class="secondCol">
+                            ליגת העל בכדורגל: הפועל ת"א - מכבי פ"ת, מחזור 10
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 15px">
+          <a
+            href="https://lp.power-ball.co.il/%D7%A1%D7%A0%D7%99%D7%A3-%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94/"
+            target="_blank"
+            ><img
+              src="https://www.sport5.co.il/Sip_Storage/FILES/8/Size304X64/1306888.jpg"
+          /></a>
+        </div>
+
+        <div style="margin-top: 15px">
+          <a
+            href="https://www.nautica.co.il/?utm_source=sport5ad&utm_medium=Ad&utm_campaign=Sport5ads"
+            target="_blank"
+            ><img
+              src="https://www.sport5.co.il/Sip_Storage/FILES/6/Size304X64/1338446.jpg"
+          /></a>
+        </div>
+
+        <div style="margin-top: 15px">
+          <a
+            href="https://www.timberland.co.il/?utm_source=sport5ad&utm_medium=Ad&utm_campaign=Sport5ads"
+            target="_blank"
+            ><img
+              src="https://www.sport5.co.il/Sip_Storage/FILES/4/Size304X64/1335574.jpg"
+          /></a>
+        </div>
+        <div style="margin-top: 15px">
+          <a
+            href="https://www.sport5.co.il/liga.aspx?FolderID=4933"
+            target="_blank"
+            ><img
+              src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size304X64/1184837.jpg"
+          /></a>
+        </div>
+
+        <div style="margin-top: 15px">
+          <a
+            href="https://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjsuzXnziw1bRD3dM3xIqlSbjzWNDirkqE0zdtpOHZJcR4EAG0k-RxSt5yU89jxFDDy1zAJYNpeGcySvJollUxiQGizniuKCAWrMrV6lpzzMZ6rpV7BBsx5jSzRs8zgOiuQYr2dtFAmfMOQ4yTsHxxNLJjE_-sKJMe1GUxt2kDts8PbhQ8tmIH_AiiO2tKlIHQHG6fqYlCNw_sFNHvgIOqsjPuwt4gx8J4iIYI8mk060Xwhey4wS-c6bWvBiLhHtbWeG2hAJ8qA3LWZYf1yi-I7Ujc3GtSfMMQkuW1O1DgZnMHod3i79NJvGeN-YFU7NMV5PPfA1hd5qHpzkTYra48eEyK20wNkjRc_HT7Zi065b-KSXjBxLMk9gBVA%2526sai%253DAMfl-YR9JpdELeOxSDR4HS9It5zNoidWhUKq2hoiC8HWK3XiJs9YiX8Nh5guTHSAC9eYha4sF9lbq0cDmYmrqWg_6WYlvMBWRMbFOlWq6zns0trVeEwtlCp0mifw89GYAw%2526sig%253DCg0ArKJSzI7TTfWGZwwfEAE%2526fbs_aeid%253D%25255Bgw_fbsaeid%25255D%2526urlfix%253D1%2526adurl%253Dhttps://www.israir.co.il/Flights/Last_Min.html?utm_source=idx&utm_medium=cpm&utm_campaign=49"
+            target="_blank"
+            ><img
+              src="https://tpc.googlesyndication.com/simgad/1118370501356072940?"
+          /></a>
+        </div>
+
+        <div class="double-pas-div">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="second-div">
+            <div class="day">אתר הליגות הנמוכות</div>
+            <div>|</div>
+            <div class="text-live-side">דאבל פס</div>
+          </div>
+        </div>
+
+        <div class="double-pas-content">
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="https://doublepass.sport5.co.il/story.php?id=32911"
+                  target="_blank"
+                  >מחזור 6: רחובות אדומה בדרום, ניצחון ענק לאחי נצרת בצפון</a
+                >
+              </div>
+              <div class="article-time">19.12.23</div>
+            </div>
+            <div>
+              <a
+                href="https://doublepass.sport5.co.il/story.php?id=32911"
+                id="ContentPlaceHolder1_ucDoublePass_rptPosts_ancLink_0"
+                target="_blank"
+              >
+                <img
+                  src="https://www.sport5.co.il/Html/XMLImages/DoublePassPictures/Size128X59/1_1702991278.jpeg"
+                  class="lazyload loaded"
+                  width="100"
+                  height="75"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="https://doublepass.sport5.co.il/story.php?id=32914"
+                  target="_blank"
+                  >גורם בכפר כנא: "מצפים מהמאמן לקחת אחריות"</a
+                >
+              </div>
+              <div class="article-time">19.12.23</div>
+            </div>
+            <div>
+              <a
+                href="https://doublepass.sport5.co.il/story.php?id=32914"
+                id="ContentPlaceHolder1_ucDoublePass_rptPosts_ancLink_1"
+                target="_blank"
+              >
+                <img
+                  src="https://www.sport5.co.il/Html/XMLImages/DoublePassPictures/Size128X59/1_1703009879.jpg"
+                  class="lazyload loaded"
+                  width="100"
+                  height="75"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="https://doublepass.sport5.co.il/story.php?id=32913"
+                  target="_blank"
+                  >העיר שלה: מרמורק הביסה את שעריים בדרבי של רחובות | צפו
+                  בתקציר</a
+                >
+              </div>
+              <div class="article-time">19.12.23</div>
+            </div>
+            <div>
+              <a
+                href="https://doublepass.sport5.co.il/story.php?id=32913"
+                id="ContentPlaceHolder1_ucDoublePass_rptPosts_ancLink_2"
+                target="_blank"
+              >
+                <img
+                  src="https://www.sport5.co.il/Html/XMLImages/DoublePassPictures/Size128X59/1_1703008515.jpg"
+                  class="lazyload loaded"
+                  width="100"
+                  height="75"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shvoong-div">
+          <a
+            class="link-shvoong"
+            href="https://www.sport5.co.il/world.aspx?FolderID=11157"
+            target="_blank"
+          >
+            <div class="btn-prev">
+              <img src="images/arrow_l_white.png" />
+            </div>
+            <span class="headerTextLeftRedSide">shvoong.co.il</span>
+          </a>
+        </div>
+
+        <div class="shvoong-content">
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="/articles.aspx?FolderID=11168&amp;docID=455213"
+                  target="_blank"
+                  >מתכוננים לצ'אלנג' ישראמן עם אריאל הלר</a
+                >
+              </div>
+              <div class="article-time">10.12.23</div>
+            </div>
+            <div>
+              <a
+                href="/articles.aspx?FolderID=11168&amp;docID=455213"
+                id="ContentPlaceHolder1_ucHPLeftArticles_rptPosts_ancLink_0"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size112X83/1337251.jpg"
+                  loading="lazy"
+                  width="100"
+                  height="75"
+                  data-src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size112X83/1337251.jpg"
+                  class="lazyload loaded"
+                  alt="מתכוננים לצ'אלנג' ישראמן עם אריאל הלר"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="/articles.aspx?FolderID=11162&amp;docID=455214"
+                  target="_blank"
+                  >מאמנו של הטריאתלט גל איזנקוט ספד לו</a
+                >
+              </div>
+              <div class="article-time">10.12.23</div>
+            </div>
+            <div>
+              <a
+                href="/articles.aspx?FolderID=11162&amp;docID=455214"
+                id="ContentPlaceHolder1_ucHPLeftArticles_rptPosts_ancLink_1"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/2/Size112X83/1337252.jpg"
+                  loading="lazy"
+                  width="100"
+                  height="75"
+                  data-src="https://www.sport5.co.il/Sip_Storage/FILES/2/Size112X83/1337252.jpg"
+                  class="lazyload loaded"
+                  alt="מאמנו של הטריאתלט גל איזנקוט ספד לו"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="/articles.aspx?FolderID=11160&amp;docID=455211"
+                  target="_blank"
+                  >"מיליון אירו על שיא עולם במרתון ולנסיה"</a
+                >
+              </div>
+              <div class="article-time">10.12.23</div>
+            </div>
+            <div>
+              <a
+                href="/articles.aspx?FolderID=11160&amp;docID=455211"
+                id="ContentPlaceHolder1_ucHPLeftArticles_rptPosts_ancLink_2"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size112X83/1337247.jpg"
+                  loading="lazy"
+                  width="100"
+                  height="75"
+                  data-src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size112X83/1337247.jpg"
+                  class="lazyload loaded"
+                  alt='"מיליון אירו על שיא עולם במרתון ולנסיה"'
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sport5-media">
+          <div class="sport5-social-media-container">
+            <div style="background-color: #da171d">
+              <div class="fb-share-text">
+                <div>הצטרפו אלינו</div>
+                <div>ברשתות החברתיות</div>
+              </div>
+              <div class="social-media">
+                <div class="tweeter-container">
+                  <a href="https://twitter.com/sport5il">
+                    <img
+                      class="social-media-picture"
+                      src="https://www.sport5.co.il/Images/Rebrand/Twitter.png"
+                    />
+                  </a>
+                </div>
+                <div class="facebook-container">
+                  <a href="https://www.facebook.com/sport55/">
+                    <img
+                      class="social-media-picture"
+                      src="https://www.sport5.co.il/Images/Rebrand/Facebook.png"
+                    />
+                  </a>
+                </div>
+                <div class="instagram-container">
+                  <a href="https://www.instagram.com/sport_5/">
+                    <img
+                      class="social-media-picture"
+                      src="https://www.sport5.co.il/Images/Rebrand/Instagram.png"
+                    />
+                  </a>
+                </div>
+                <div class="tiktok-container">
+                  <a href="https://www.tiktok.com/@sport5il">
+                    <img
+                      class="social-media-picture"
+                      src="https://www.sport5.co.il/Images/Rebrand/TikTok.png"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sport5-profile">
+            <img src="https://www.sport5.co.il/Images/Rebrand/logo-fb.png" />
+          </div>
+        </div>
+        <div class="mako-div">
+          <a
+            class="link-shvoong"
+            href="https://www.mako.co.il/"
+            target="_blank"
+          >
+            <span class="headerTextLeftRedSide">mako</span>
+          </a>
+        </div>
+
+        <div class="mako-content">
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="https://www.mako.co.il/men-men_news/Article-57791e10e6e5c81027.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                  target="_blank"
+                  >רמת ישי: צעיר דקר 3 מבני משפחתו - ופצע אותם קשה</a
+                >
+              </div>
+              <div class="article-time">12.12.23</div>
+            </div>
+            <div>
+              <a
+                href="https://www.mako.co.il/men-men_news/Article-57791e10e6e5c81027.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                id="ContentPlaceHolder1_ucMako_rptPosts_ancLink_0"
+                target="_blank"
+              >
+                <img
+                  src="https://img.mako.co.il/2023/12/12/photo1702392760_autoOrient_c.jpg"
+                  width="100"
+                  height="75"
+                  data-src="https://img.mako.co.il/2023/12/12/photo1702392760_autoOrient_c.jpg"
+                  class="lazyload loaded"
+                  alt="רמת ישי: צעיר דקר 3 מבני משפחתו - ופצע אותם קשה"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="https://www.mako.co.il/hix-nature/Article-e8567bf4d0e5c81026.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                  target="_blank"
+                  >גשם, רוחות והצפות: מערכת גשם קצרה ומרוכזת בדרך לישראל</a
+                >
+              </div>
+              <div class="article-time">12.12.23</div>
+            </div>
+            <div>
+              <a
+                href="https://www.mako.co.il/hix-nature/Article-e8567bf4d0e5c81026.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                id="ContentPlaceHolder1_ucMako_rptPosts_ancLink_1"
+                target="_blank"
+              >
+                <img
+                  src="https://img.mako.co.il/2023/03/14/kolazwinter_autoOrient_c.jpg"
+                  width="100"
+                  height="75"
+                  data-src="https://img.mako.co.il/2023/03/14/kolazwinter_autoOrient_c.jpg"
+                  class="lazyload loaded"
+                  alt="גשם, רוחות והצפות: מערכת גשם קצרה ומרוכזת בדרך לישראל"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="https://www.mako.co.il/entertainment-celebs/local-2023/Article-506dbe25f195c81026.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                  target="_blank"
+                  >בשעה טובה: כוכב הטיקטוק אור זוטי אלקיים ואשתו דריה מצפים לילד
+                  ראשון</a
+                >
+              </div>
+              <div class="article-time">12.12.23</div>
+            </div>
+            <div>
+              <a
+                href="https://www.mako.co.il/entertainment-celebs/local-2023/Article-506dbe25f195c81026.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                id="ContentPlaceHolder1_ucMako_rptPosts_ancLink_2"
+                target="_blank"
+              >
+                <img
+                  src="https://img.mako.co.il/2022/08/24/OrZotiTikTokWedding_Aug2022_9_autoOrient_c.jpg"
+                  width="100"
+                  height="75"
+                  data-src="https://img.mako.co.il/2022/08/24/OrZotiTikTokWedding_Aug2022_9_autoOrient_c.jpg"
+                  class="lazyload loaded"
+                  alt="בשעה טובה: כוכב הטיקטוק אור זוטי אלקיים ואשתו דריה מצפים לילד ראשון"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-content">
+              <div class="article-title">
+                <a
+                  href="https://www.mako.co.il/travel-news/international/Article-89a8a9bb99d5c81026.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                  target="_blank"
+                  >אחד היעדים האהובים על הישראלים הולך להתייקר</a
+                >
+              </div>
+              <div class="article-time">12.12.23</div>
+            </div>
+            <div>
+              <a
+                href="https://www.mako.co.il/travel-news/international/Article-89a8a9bb99d5c81026.htm&amp;utm_source=sport5&amp;utm_medium=RSS"
+                id="ContentPlaceHolder1_ucMako_rptPosts_ancLink_3"
+                target="_blank"
+              >
+                <img
+                  src="https://img.mako.co.il/2023/07/13/shutterstock_1187820817_re_autoOrient_c.jpg"
+                  width="100"
+                  height="75"
+                  data-src="https://img.mako.co.il/2023/07/13/shutterstock_1187820817_re_autoOrient_c.jpg"
+                  class="lazyload loaded"
+                  alt="אחד היעדים האהובים על הישראלים הולך להתייקר"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="more-news-div">
+          <div class="more-news-text">כתבות נוספות</div>
+        </div>
+
+        <div class="news-box">
+          <div class="news-article">
+            <a
+              href="https://www.sport5.co.il//articles.aspx?FolderID=409&amp;docID=455292&amp;int_source=taboola"
+              target="_parent"
+              slot="thumbnail"
+            >
+              <div class="profile-news" style="position: relative">
+                <img class="first-img-news" src="images/morenews-first.webp" />
+                <div class="static-text" style="bottom: 26.5px">
+                  הנקראות ביותר
+                </div>
+                <a
+                  class="link-mroe-news"
+                  href="https://www.sport5.co.il//articles.aspx?FolderID=409&amp;docID=455292&amp;int_source=taboola"
+                  target="_parent"
+                  slot="thumbnail"
+                >
+                  זה אמיתי? בן 12 שמטריף את ספרד
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <div class="news-article" style="margin-top: 5px">
+            <a
+              href="https://www.sport5.co.il//articles.aspx?FolderID=274&docID=455352&int_source=taboola"
+              target="_parent"
+              slot="thumbnail"
+            >
+              <div class="profile-news" style="position: relative">
+                <img class="first-img-news" src="images/morenews-second.webp" />
+                <div class="static-text" style="left: 1.4px; bottom: 49px">
+                  הנקראות ביותר
+                </div>
+                <a
+                  class="link-mroe-news"
+                  href="https://www.sport5.co.il//articles.aspx?FolderID=274&docID=455352&int_source=taboola"
+                  target="_parent"
+                  slot="thumbnail"
+                  >העתיד כאן: בכורה מוצלחת לצעירי מכבי ת"א</a
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="sports-news">
+          <div class="first-news">
+            <a
+              href="https://playbyplay.sport5.co.il/?GameID=130525&FLNum=169"
+              id="ContentPlaceHolder1_ucHPBombaArticle_ancArticleUrl"
+              target="_self"
+            >
+              <img
+                src="https://www.sport5.co.il/Sip_Storage/FILES/1/size624x514/1249821.jpg"
+                width="100%"
+              />
+              <div class="bomba-titles-container">
+                <div class="bomba-title">
+                  <div class="bomba-title-content">
+                    אני אלוף העולם: ארגנטינה זכתה במונדיאל
+                  </div>
+                  <img
+                    class="play-main-article"
+                    src="images/play-main-article.png"
+                  />
+                </div>
+                <div class="bomba-subtitle-first-news">
+                  צפו: ארגנטינה וצרפת סיפקו את גמר המונדיאל הגדול בהיסטוריה, אבל
+                  רק אחת יצאה מנצחת. מסי נפרד מהטורניר עם צמד ענק ונתן עוד תשובה
+                  לאלה שהיה להם ספקות לגבי גדולתו, אמבפה השלים משחק גרנדיוזי עם
+                  שלושער משלו בדרך ל-2:4 (3:3) מרתק אחרי דו קרב פנדלים שייזכר
+                  לדורות
+                </div>
+
+                <div class="author-time-container">
+                  <div class="publish-time">19:54 - 18.12.22</div>
+                  <div>מערכת אתר ערוץ הספורט</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=397"
+                  >ליגת האלופות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&amp;docID=456332"
+                  target="_self"
+                  data-min-anchor="true"
+                  >מה הלאה? היום שאחרי ההחלטה בסופר ליג</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&amp;docID=456332"
+                  target="_self"
+                  >מההחלפה האפשרית של הצ'מפיונס, דרך הקהל ועד הכדורגל הישראלי:
+                  עושים סדר</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>12:07 - 21.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">40</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=456332"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/4/Size272x202/1340344.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a
+                  href="https://worldcup.sport5.co.il/TemplatesExternal/Mondial/Mondial2022.aspx?FolderID=10795"
+                >
+                  מונדיאל</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://worldcup.sport5.co.il/articles.aspx?FolderID=10796&docID=455621"
+                  target="_self"
+                  >הסכום בו תימכר חולצת מסי מגמר המונדיאל</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://worldcup.sport5.co.il/articles.aspx?FolderID=10796&docID=455621"
+                  target="_self"
+                >
+                  שובר שיאים: החולצה צפויה להימכר תמורת הכמות הגבוהה אי פעם
+                  בספורט
+                </a>
+              </div>
+              <div class="author-time-box">
+                <div>12:11 - 14.12.13</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">11</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://worldcup.sport5.co.il/articles.aspx?FolderID=10796&docID=455621"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/6/Size272x202/1338426.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a
+                  style="direction: rtl"
+                  href="https://www.sport5.co.il/liga.aspx?FolderID=5991"
+                  >דני אבדיה ב -NBA</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=8166&docID=455581"
+                  target="_self"
+                  >עיניים בגב: צפו באסיסט המדהים של אבדיה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=8166&docID=455581"
+                  target="_self"
+                  style="direction: rtl"
+                  >הישראלי, ברגע אחד, הפך לוויראלי. "אולי המסירה הכי יפה שראיתי
+                  כל השנה"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>08:50 - 13.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">120</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=8166&docID=455581"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size272x202/1338371.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://nba.sport5.co.il/NBA.aspx?FolderId=402">NBA</a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455626"
+                  target="_self"
+                  >"מקווה שדריימונד זוכה לעזרה שהוא צריך"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455626"
+                  target="_self"
+                  >KD על חברו לשעבר לקבוצה: "מעשה משוגע". שחקן הווריירס הושעה
+                  ללא הגבלה</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>12:50 - 14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">8</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455626"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/9/Size272x202/1338439.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=11350"
+                  >הליגה הסרבית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11351&amp;docID=456278"
+                  target="_self"
+                  data-min-anchor="true"
+                  >נחשף: סכום העתק שבכר יקבל כפיצוי מהכוכב</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11351&amp;docID=456278"
+                  target="_self"
+                  >בסרביה אמדו את הסכום אותו הישראלי צפוי לקבל אם אכן יפוטר
+                  מהכוכב</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>10:59 - 21.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">52</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=11351&docID=456278"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size272x202/1340307.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=251">
+                  ליגה אנגלית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=252&docID=455658"
+                  target="_self"
+                  >לראשונה אי פעם: אישה תשפוט בפרמייר ליג</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=252&docID=455658"
+                  target="_self"
+                  >רבקה וולץ' תנהל את פולהאם-ברנלי. וגם: השופט השחור הראשון אחרי
+                  15 שנים</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>19:17 - 14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">3</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=252&docID=455658"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/0/Size272x202/1338490.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=397"
+                  >ליגת האלופות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&amp;docID=456329"
+                  target="_self"
+                  data-min-anchor="true"
+                  >בדרך למהפכה? אושרה הקמת הסופר ליג</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&amp;docID=456329"
+                  target="_self"
+                  >בית הדין האירופי קבע כי אופ"א ופיפ"א לא יכולות להעניש את
+                  המשתתפות</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>10:59 - 21.12.13</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">70</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=456329"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/9/Size272x202/1340339.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://nba.sport5.co.il/NBA.aspx?FolderId=402">
+                  NBA</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455639"
+                  target="_self"
+                  >"לא תקבל את הכדור": צפו ביאניס רותח מזעם</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455639"
+                  target="_self"
+                  >ביזארי: שחקני אינדיאנה סירבו להביא לכוכב (64 נק') את כדור
+                  המשחק. ההסבר</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>16:01 - 14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">12</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455639"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size272x202/1338471.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="video-most-viewed">התכנים הנצפים ביותר</div>
+
+        <div class="world-cup-video">
+          <video width="100%" controls autoplay muted>
+            <source src="videos/world cup final.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="VOD">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://vod.sport5.co.il/?Vc=147&Vi=455595">VOD</a>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div style="position: relative">
+            <a
+              href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455518"
+              target="_self"
+            >
+              <img
+                class="video-picture"
+                src="https://www.sport5.co.il/Sip_Storage/FILES/5/Size272x202/1338285.jpg"
+              />
+              <div class="play-main-article-picture-div">
+                <img
+                  class="play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </div>
+            </a>
+
+            <div clas="video-text-desc">
+              <a
+                class="video-desc"
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455518"
+                target="_self"
+                >אמבפה בשמינית: פ.ס.ז סיימה ב-1:1 מול דוטמונד</a
+              >
+            </div>
+
+            <div class="arrow-l-btn">
+              <img src="images/arrow_l_white.png" />
+            </div>
+          </div>
+          <div style="position: relative">
+            <a
+              href="https://vod.sport5.co.il/?Vc=11459&Vi=455491"
+              target="_self"
+            >
+              <img
+                class="video-picture"
+                src="https://www.sport5.co.il/Sip_Storage/FILES/0/Size272x202/1338290.jpg"
+              />
+              <div class="play-main-article-picture-div">
+                <img
+                  class="play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </div>
+              <div clas="video-text-desc">
+                <a
+                  class="video-desc"
+                  href="https://vod.sport5.co.il/?Vc=11459&Vi=455491"
+                  target="_self"
+                  >אכזבה קולקטיבית: מילאן וניוקאסל הודחו לאחר 1:2 לאיטלקים</a
+                >
+              </div>
+            </a>
+          </div>
+
+          <div style="position: relative">
+            <a
+              href="https://vod.sport5.co.il/?Vc=11459&Vi=455490"
+              target="_self"
+            >
+              <img
+                class="video-picture"
+                src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/1338283.jpg"
+              />
+              <div class="play-main-article-picture-div">
+                <img
+                  class="play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </div>
+            </a>
+            <div clas="video-text-desc">
+              <a
+                class="video-desc"
+                href="https://vod.sport5.co.il/?Vc=11459&Vi=455490"
+                target="_self"
+                >הפתעה: אנטוורפן הדהימה את ברצלונה עם 2:3</a
+              >
+            </div>
+
+            <div class="arrow-r-btn">
+              <img src="images/arrow_r_white.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="isreal-football-container">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://vod.sport5.co.il/?Vc=147&Vi=455595"
+              >כדורגל ישראלי</a
+            >
+          </div>
+        </div>
+
+        <div class="isreal-football-news-container">
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=11350"
+                  >הליגה הסרבית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11351&amp;docID=456334"
+                  target="_self"
+                  >רשמי: ברק בכר פוטר מהכוכב האדום</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11351&amp;docID=456334"
+                  target="_self"
+                  >המאמן הישראלי עוזב את סרביה אחרי חצי שנה מאכזבת. "אנו נפרדים
+                  כחברים"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14:12</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">128</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=11351&docID=456334"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size272x202/1340347.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=1350"
+                  >ליגה בלגית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=1375&amp;docID=456335"
+                  target="_self"
+                  >"בית הדין האירופי אישר את "חוק רפאלוב
+                </a>
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=1375&amp;docID=456335"
+                  target="_self"
+                  >הבקשה של אנטוורפן התקבלה, הגישה ל"שחקני בית" ביבשת עשויה
+                  להשתנות</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>11:39</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">5</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=1375&docID=456335"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/0/Size272x202/1340350.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=44"
+                  >ליגת העל</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&amp;docID=456322"
+                  target="_self"
+                  >הלב שוב במקום: על החזרה הביתה לסמי עופר</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&amp;docID=456322"
+                  target="_self"
+                  >הנשמה נזקקה למפגש המחודש עם הכסא. וגם: מילה טובה לדגו. אוהד
+                  ירוק</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>10:33</div>
+                <div>תמיר אלחיאני</div>
+              </div>
+              <div class="comment">33</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=456322"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size272x202/1340317.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=44"
+                  >ליגת העל</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&amp;docID=456299"
+                  target="_self"
+                  >ג'ורדן סבן ייעדר תקופה ממושכת מהמגרשים</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&amp;docID=456299"
+                  target="_self"
+                  >קשרה של מ.ס אשדוד ממתין לניתוח בלסתו, בה הוא סובל ממספר
+                  שברים</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>10:51</div>
+                <div>תומר לוי</div>
+              </div>
+              <div class="comment">4</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=456299"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/0/Size272x202/1340250.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=44"
+                  >ליגת העל</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&amp;docID=456304"
+                  target="_self"
+                  >"הערצתי את זהבי והיום זה ירד ל-0 ומתחת"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&amp;docID=456304"
+                  target="_self"
+                  >גרסת איש המדיה של ב"ש לאירוע במנהרה: טעיתי, אך לא אחזור על מה
+                  שאמר לי</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>08:44</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">249</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=456304"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size272x202/1340297.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=397">
+                  ליגת האלופות
+                </a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455585"
+                  target="_self"
+                >
+                  ?בזכות חוק חדש: מכבי תעלישה ירות לאלופות</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455585"
+                  target="_self"
+                  >הצהובים עשויים להרוויח מהשינוי בצ`מפיונס. התרחיש המלא
+                  בפנים</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14:36</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">162</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455585"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/9/Size272x202/1338399.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=44">
+                  ליגת העל
+                </a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=455654"
+                  target="_self"
+                  >גלעד ברגמן צפוי להתמנות לתבוע ההתאחדות
+                </a>
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=455654"
+                  target="_self"
+                  >יחליף בתפקיד את התובע הנוכחי ניר רשף, שביקש להתמנות ליועץ
+                  המשפטי
+                </a>
+              </div>
+              <div class="author-time-box">
+                <div>12:14</div>
+                <div>מוטי פשכצקי</div>
+              </div>
+              <div class="comment">2</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=455654"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/9/Size272x202/1338479.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=44">
+                  ליגת העל
+                </a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=455632"
+                  target="_self"
+                  >"ראיתי מי לא ראוי להיות בהפועל ב"ש"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=455632"
+                  target="_self"
+                  style="direction: rtl"
+                  >צפו בברדה מגיב למשבר: "זה לא הכדורגל שלי, אנחנו חייבים לעשות
+                  לזה סוף"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>11:58</div>
+                <div>תומר לוי</div>
+              </div>
+              <div class="comment">25</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=455632"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size272x202/1338461.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=80">
+                  ליגה לאומית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=127&docID=455615"
+                  target="_self"
+                  >שוער ראשל"צ זינק על רסיס באימון ונפצע</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=127&docID=455615"
+                  target="_self"
+                  >גליקליך, שוער הנוער לשעבר ששייך להפועל, נפגע משאריות שנותרו
+                  בהברפלד
+                </a>
+              </div>
+              <div class="author-time-box">
+                <div>11:09</div>
+                <div>יגאל גולדשטיין ואורי בבליקי</div>
+              </div>
+              <div class="comment">23</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=127&docID=455615"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/2/Size272x202/1338412.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=44">
+                  ליגת העל</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=8638&amp;docID=455986"
+                  target="_self"
+                  >התגעגעו? כך הגיבו בגנט לחתימת סייף בחיפה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=8638&amp;docID=455986"
+                  target="_self"
+                  >יריבת הירוקים בקונפרנס השתעשעה. בבלגיה טענו: "הגרלה טובה, אין
+                  תירוצים"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>19.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">88</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=64&docID=456056"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/2/Black137X104/1339702.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="international-football-container">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://www.sport5.co.il/world.aspx?FolderID=4453"
+              >כדורגל עולמי
+            </a>
+          </div>
+        </div>
+
+        <div class="international-football-news-container">
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=377">
+                  ליגה ספרדית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=378&docID=455724"
+                  target="_self"
+                  >צ'אבי בלחץ: מארקס מועמד להחליפו</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=378&docID=455724"
+                  target="_self"
+                  style="direction: rtl"
+                  >מאמן בארסה בסכסוך עם דקו. המקסיקני מחכה על הקווים ומה חושב
+                  לאפורטה?
+                </a>
+              </div>
+              <div class="author-time-box">
+                <div>17:26</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">35</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=378&docID=455724"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size272x202/1338691.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=251"
+                  >ליגה אנגלית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=252&docID=455713"
+                  target="_self"
+                  >"דיווח: "ההנהלה לא תפטר את טן האח
+                </a>
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=252&docID=455713"
+                  target="_self"
+                  >המנג'ר ההולנדי כבר חושב על בניית הסגל. וגם: רשימת המועמדים
+                  לעזיבה</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>16:54</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">11</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=252&docID=455713"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/0/Size272x202/1338670.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=397"
+                  >ליגת האלופות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455518"
+                  target="_self"
+                  >תאטרון בלהות: מנצ'סטר יונייטד צריכה עזרה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455518"
+                  target="_self"
+                  >המועדון לא מצליח להחזיר את הפאר משנות העבר. אבי מלר מנתח את
+                  הכישלון</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14:28 - 13.12.23</div>
+                <div>אבי מילר</div>
+              </div>
+              <div class="comment">47</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455518"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/5/Size272x202/1338125.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=375"
+                  >ליגה איטלקית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=376&amp;docID=455746"
+                  target="_self"
+                  >לאוטרו הגיע לסיכום על הארכת חוזה באינטר</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=376&amp;docID=455746"
+                  target="_self"
+                  >סיכום: החלוץ המבוקש יקשור את עתידו עד 2028. וגם: השכר
+                  המשודרג</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>15:07</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">14</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=4227&docID=455651"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size272x202/1338771.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=397"
+                  >ליגת האלופות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&amp;docID=455638"
+                  target="_self"
+                >
+                  ?מדוע מסי ואמבפה מועמדים לשחקן השנה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&amp;docID=455638"
+                  target="_self"
+                  >באתר התחרות פירטו: הסיבות (הקלושות) שבגללן השחקנים נבחרו
+                  לתואר היוקרתי</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">52</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=401&docID=455620"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size272x202/1338467.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=397"
+                  >ליגת האלופות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455635"
+                  target="_self"
+                  >הזוי: מסי ואמבפה מועמדים לפרס שחקן השנה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455635"
+                  target="_self"
+                  >המונדיאל לא נכלל: הצמד לצד הולאנד בשלישייה בשל זכייה באליפות
+                  צרפת</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">340</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455635"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/1338463.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=9683"
+                  >יורו 2024</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=9684&amp;docID=456127"
+                  target="_self"
+                  >"קורטואה הודיע: "לא אשתתף ביורו 2024
+                </a>
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=9684&amp;docID=456127"
+                  target="_self"
+                  style="direction: rtl"
+                  >השוער שקרע את הצולבת לא יהיה עם בלגיה: "לא אוכל לשחק ב-80%
+                  כשירות"
+                </a>
+              </div>
+              <div class="author-time-box">
+                <div>19.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">8</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=9684&docID=456127
+                "
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/4/Size272x202/1336364.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=495"
+                  >ליגה צרפתית</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=496&amp;docID=456301"
+                  target="_self"
+                  >"קיליאן ואיתן אמבפה הם העתיד של הכדורגל"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=496&amp;docID=456301"
+                  target="_self"
+                  >בצרפת נרגשים אחרי הבכורה של האח הקטן, בעוד החלוץ המשיך לשבור
+                  שיאים</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>21.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">17</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=496&docID=456301"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/1340253.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderId=251">
+                  ליגה אנגלית
+                </a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=252&amp;docID=454969"
+                  target="_self"
+                  >לראשונה בקריירה: השפל של פפ בהפסד סיטי</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=252&amp;docID=454969"
+                  target="_self"
+                  style="direction: rtl"
+                  >הספרדי שוב לא ניצח, והודה: "אנחנו מתקשים,וילה הייתה טובה
+                  יותר"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>7.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">58</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=252&docID=454969"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Black137X104/1336577.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderId=397">
+                  ליגת האלופות
+                </a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455561 
+                "
+                  target="_self"
+                >
+                  הכי טוב בשלב הבתים: ההישג הנדיר של עומרי גלזר</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455561 
+                "
+                  target="_self"
+                >
+                  המספרים מוכיחים כי השוער של הכוכב האדום, התמודד עם כמות
+                  הבעיטות הגבוהה ביותר. ניתוח המספרים והרשימה המלאה</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">14</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455561 
+              "
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/1338363.jpg
+                  "
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="opinions-container">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://www.sport5.co.il/Articles.aspx?FolderId=4482">
+              טורים ודעות
+            </a>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <div style="position: relative">
+            <a
+              href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455518"
+              target="_self"
+            >
+              <img
+                class="video-picture"
+                src="https://www.sport5.co.il/Sip_Storage/FILES/8/Size272x202/1087558.jpg"
+              />
+              <div class="play-main-article-picture-div" style="top: 50%">
+                <img
+                  class="play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </div>
+            </a>
+
+            <div>
+              <a
+                class="video-desc"
+                href="/articles.aspx?FolderID=401&amp;docID=455702"
+                tabindex="0"
+                >שלום לך: מכבי חיפה נראתה כמו קבוצת כדורגל</a
+              >
+            </div>
+
+            <div class="arrow-l-btn">
+              <img src="images/arrow_l_white.png" />
+            </div>
+            <span
+              style="
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                font-size: 10px;
+              "
+            >
+              ניסן קניאס</span
+            >
+          </div>
+          <div style="position: relative">
+            <a
+              href="https://www.sport5.co.il/articles.aspx?FolderID=401&docID=455712"
+              target="_self"
+            >
+              <img
+                class="video-picture"
+                src="https://www.sport5.co.il/Sip_Storage/FILES/9/Size272x202/1080119.jpg"
+              />
+              <div class="play-main-article-picture-div" style="top: 50%">
+                <img
+                  class="play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </div>
+            </a>
+            <div>
+              <a
+                class="video-desc"
+                href="/articles.aspx?FolderID=401&amp;docID=455712"
+                tabindex="0"
+                >מסאי דגו וצ'ארון שרי: ההישג הזה בזכותכם</a
+              >
+            </div>
+            <span
+              style="
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                font-size: 10px;
+              "
+            >
+              תמיר אלחיאני</span
+            >
+          </div>
+
+          <div style="position: relative">
+            <a
+              href="https://www.sport5.co.il/articles.aspx?FolderID=405&docID=455706"
+              target="_self"
+            >
+              <img
+                class="video-picture"
+                src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/879443.jpg"
+              />
+              <div class="play-main-article-picture-div" style="top: 50%">
+                <img
+                  class="play-main"
+                  src="https://www.sport5.co.il/images/videosmallitem.png"
+                />
+              </div>
+            </a>
+            <div>
+              <a
+                class="video-desc"
+                href="/articles.aspx?FolderID=405&amp;docID=455706"
+                tabindex="0"
+                >יכולה גם בלעדיו: כך גברה מכבי תל אביב על אנדולו אפס</a
+              >
+            </div>
+            <div class="arrow-r-btn">
+              <img src="images/arrow_r_white.png" />
+            </div>
+            <span
+              style="
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                font-size: 10px;
+              "
+            >
+              שי האוזמן
+            </span>
+          </div>
+        </div>
+
+        <div class="basketball-container">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://www.sport5.co.il/world.aspx?FolderID=4467">
+              כדורסל
+            </a>
+          </div>
+        </div>
+
+        <div class="basketball-news-container">
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=273"
+                  >ליגת העל</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=274&amp;docID=455737"
+                  target="_self"
+                  >"בראון לא יכול להנהיג ממרחק אלפי ק"מ"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=274&amp;docID=455737"
+                  target="_self"
+                  style="direction: rtl"
+                  >פרנקו על הכוכב של הפועל ת"א שחזר לישראל. על הניצחון: "עשינו
+                  שטויות"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>16:12</div>
+                <div>נועה פופלינגר</div>
+              </div>
+              <div class="comment">9</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=274&docID=455737"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/1/Size272x202/1338751.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=404"
+                  >יורוליג</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455731"
+                  target="_self"
+                  >השחקנים מרדו, מאמן ז'לגיריס לא יפוטר</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455731"
+                  target="_self"
+                  style="direction: rtl"
+                  >מקסביטיס יישאר לאחר שהסגל שוחח עם ההנהלה. "מעולם לא ראיתי דבר
+                  כזה"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>16:16</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">6</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=405&docID=455731"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/4/Size272x202/1338714.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=404"
+                  >יורוליג</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455706"
+                  target="_self"
+                  >יכולה גם בלעדיו: כך גברה מכבי על אנדולו</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455706"
+                  target="_self"
+                  >בולדווין סופסל, בלאט הסתדר ממש לבד והרעיונות של קטש עבדו.
+                  האוזמן מנתח</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>11:01</div>
+                <div>שי האוזמן</div>
+              </div>
+              <div class="comment">52</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=405&docID=455706"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/8/Size272x202/1338658.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://nba.sport5.co.il/NBA.aspx?FolderId=402">NBA</a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&amp;docID=455719"
+                  target="_self"
+                  >"מרגיש חמלה לדריימונד, רואים שהוא סובל"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&amp;docID=455719"
+                  target="_self"
+                  style="direction: rtl"
+                  >גובר התייחס לשחקן המתוסבך שחנק אותו לפני כחודש. קר: "הוא צריך
+                  להשתנות"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>11:19</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">14</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455719"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/8/Size272x202/1338688.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=404"
+                  >יורוליג</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455698"
+                  target="_self"
+                  data-min-anchor="true"
+                  >"תמיר בלאט הוא גארד על, הוא טוב כל השנה"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455698"
+                  target="_self"
+                  style="direction: rtl"
+                  >צפו בתקציר. בראון הילל את הרכז לאחר הניצחון. קטש: "ההגנה היא
+                  הסיפור"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>7:00</div>
+                <div>עמרי מנהיים</div>
+              </div>
+              <div class="comment">53</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455698"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/1338633.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderId=404">
+                  יורוליג
+                </a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&docID=455539
+                  "
+                  target="_self"
+                >
+                  מדר יכול להרוויח: השפעת חתימת שאראס בפנרבחצ'ה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&docID=455539
+                  "
+                  target="_self"
+                  style="direction: rtl"
+                >
+                  הקשר המתוח של הליטאי עם קלאתס והצטיינות הישראלי בהגנה יסדרו
+                  מעמד חדש?</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>סער שהם</div>
+              </div>
+              <div class="comment">56</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=405&docID=455539
+                "
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/2/Size272x202/1338342.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderId=404">
+                  יורוליג
+                </a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455634"
+                  target="_self"
+                  >שוב איתנו: שאראס מונה למאמן פנרבחצ'ה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=405&amp;docID=455634"
+                  target="_self"
+                  >רשמי: אגדת הכדורסל שעזב את בארסה בקיץ יאמן את מדר עם חוזה עד
+                  קיץ 2026</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">3</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=405&docID=455634
+                "
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/0/Size272x202/1338460.jpg
+                  "
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=408"
+                  >ליגות נוספות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=409&amp;docID=455661"
+                  target="_self"
+                  data-min-anchor="true"
+                  >המחווה המרגשת של נבחרת הוותיקים בכדורסל</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=409&amp;docID=455661"
+                  target="_self"
+                  >באירוע חנוכה מיוחד, התקיים משחק מול נבחרת עוטף עזה והתארחו
+                  מפונים</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">2</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=409&docID=455661 
+              "
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/6/Size272x202/1338496.jpg
+                  "
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://nba.sport5.co.il/NBA.aspx?FolderId=402">NBA</a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&amp;docID=455522"
+                  target="_self"
+                  >"איזה סם לקחת?. "צפו במוראנט מעיד במשפט</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&amp;docID=455522"
+                  target="_self"
+                  >רכז ממפיס נתן את נקודת מבטו על מקרה בו נאשם שחבט באגרופים בבן
+                  17</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>13.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">121</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=398&docID=455572
+                "
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/3/Black137X104/1338133.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://nba.sport5.co.il/NBA.aspx?FolderId=402">NBA</a>
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&amp;docID=455526"
+                  target="_self"
+                  >ב-2 מיליארד ד': המתחם החדש של וושינגטון</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://nba.sport5.co.il/articles.aspx?FolderID=403&amp;docID=455526"
+                  target="_self"
+                  >צפו בתמונות: אולם עצום, מתקני אימון מפוארים ו"פאן זון"
+                  יוקמו</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>13.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">13</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://nba.sport5.co.il/articles.aspx?FolderID=403&docID=455526"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/0/Black137X104/1338140.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col"></div>
+        </div>
+
+        <div class="car-container">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://www.sport5.co.il/world.aspx?FolderID=7162">
+              רכב
+            </a>
+          </div>
+        </div>
+
+        <div class="car-news-container">
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=7185"
+                  >חדשות ושמועות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7186&amp;docID=455566"
+                  target="_self"
+                  >5 מכוניות קטנות עד 10,000 שקל</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7186&amp;docID=455566"
+                  target="_self"
+                  >אפשר גם בזול: סטודנטים? חיילים משוחררים? קבלו 5 מכוניות
+                  בתקציב נמוך</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>רן סגל</div>
+              </div>
+              <div class="comment">4</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=7186&docID=455566"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/5/Size272x202/1338305.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=7206"
+                  >מבחני רכב</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7207&amp;docID=455551"
+                  target="_self"
+                  >לא הכל מושלם: טויוטה C-HR במבחן</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7207&amp;docID=455551"
+                  target="_self"
+                  style="direction: rtl"
+                  >עד כמה הוא טוב מקודמו ובמה בכל זאת הוא פחות מצטיין?</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>רן סגל</div>
+              </div>
+              <div class="comment">9</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=7207&docID=455551"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/5/Size272x202/1338225.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=7185"
+                  >חדשות ושמועות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7186&amp;docID=455597"
+                  target="_self"
+                  >בשם העיצוב: ג'נסיס G80 מתעדכנת</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7186&amp;docID=455597"
+                  target="_self"
+                  >עדכוני עיצוב חיצוניים ובתא הנוסעים, אך לא ביחידות ההנעה</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>רן סגל</div>
+              </div>
+              <div class="comment">1</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=7186&docID=455597"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/7/Size272x202/1338377.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=7185"
+                  >חדשות ושמועות</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7186&amp;docID=454024"
+                  target="_self"
+                  style="direction: rtl"
+                  >מי תהיה מכונית השנה 2023? אתם בוחרים!</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7186&amp;docID=454024"
+                  target="_self"
+                  >הצביעו בקטגוריות השונות ואולי תזכו בשוברים בסך 500 שקלים</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>28.11.23</div>
+                <div>מערכת עולם הרכב</div>
+              </div>
+              <div class="comment">0</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=7186&docID=454024"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/5/Size272x202/1333945.jpg"
+                  class="img-res"
+                />
+                <div class="play-main-article-div">
+                  <img
+                    class="play-main"
+                    src="https://www.sport5.co.il/images/videosmallitem.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="additional-branches-container">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://www.sport5.co.il/world.aspx?FolderID=4498">
+              ענפים נוספים
+            </a>
+          </div>
+        </div>
+
+        <div class="additional-branches-news-container">
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=7746"
+                  >אמנויות לחימה</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7747&amp;docID=455764"
+                  target="_self"
+                  style="direction: rtl"
+                  >עטוף בדגל: עוד ניצחון לעילי ברזילי ב-LFA</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=7747&amp;docID=455764"
+                  target="_self"
+                  >הישראלי רשם ניצחון רביעי ברציפות כשגבר על טיילר ג'ונס</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>9:40</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">2</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=7747&docID=455764"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/9/Size272x202/1338819.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=7197"
+                  >ספורט מוטורי</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=618&amp;docID=455748"
+                  target="_self"
+                  >"הוא כבר לא השומאכר שהכרתי בעבר"</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=618&amp;docID=455748"
+                  target="_self"
+                  style="direction: rtl"
+                  >במלאת עשר שנים לתאונה הקשה, מנהל לשעבר בפרארי: "החיים שלו
+                  שונים עכשיו"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>15.12.23</div>
+                <div>מערכת אתר ערוץ הספורט</div>
+              </div>
+              <div class="comment">13</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=618&docID=455748"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/4/Size272x202/1338774.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=6044"
+                  >שייט</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=6045&amp;docID=455745"
+                  target="_self"
+                  >מדלית זהב לקנטור בתחרות הסבב האחרונה</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=6045&amp;docID=455745"
+                  target="_self"
+                  >פודיום כל ישראלי לשייטות: שטיינברג זכתה בכסף, ספיצ'קוב עם
+                  הארד</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>15.12.23</div>
+                <div>רותם פלדברג</div>
+              </div>
+              <div class="comment">1</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=6045&docID=455745"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/9/Size272x202/1338769.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=2910"
+                  >אופניים</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=2911&amp;docID=455720"
+                  target="_self"
+                  >מיזם מבורך: רוכבים למען החטופים</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=2911&amp;docID=455720"
+                  target="_self"
+                  style="direction: rtl"
+                  >כ-300 רוכבים ורוכבות בת"א: "מקיימים את האירוע כדי להרעיד את
+                  המדינה"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>15.12.23</div>
+                <div>רותם פלדברג</div>
+              </div>
+              <div class="comment">0</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=2911&docID=455720"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/1338683.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="podcasts-container">
+          <div class="btn-prev">
+            <img src="images/arrow_l_white.png" />
+          </div>
+          <div class="VOD-holder">
+            <a href="https://www.sport5.co.il/world.aspx?FolderID=8201">
+              פודקאסטים
+            </a>
+          </div>
+        </div>
+
+        <div class="podcasts-news-container">
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=10837"
+                  >הנוסע המתמיד</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=10838&amp;docID=455617"
+                  target="_self"
+                  >"עוד יום רגיל": הכל על הצלילה של יונייטד</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=10838&amp;docID=455617"
+                  target="_self"
+                  >פ.ס.ז' גירדה שמינית ובארסה התפדחה. "הנוסע המתמיד" נפרדים משלב
+                  הבתים</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>14.12.23</div>
+                <div>מערכת הרדיו</div>
+              </div>
+              <div class="comment">0</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=10838&docID=455617"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/5/Size272x202/1338415.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=10833"
+                  >עולים לרגל</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=10834&amp;docID=455514"
+                  target="_self"
+                  >"לחשב מסלול מחדש: "מצבה העגום של ב"ש</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=10834&amp;docID=455514"
+                  target="_self"
+                  style="direction: rtl"
+                  >הבריחה של מכבי ת"א, ההחלטות של דגו ומה עם בורחה למה? "עולים
+                  לרגל"</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>13.12.23</div>
+                <div>מערכת הרדיו</div>
+              </div>
+              <div class="comment">2</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=10834&docID=455514"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/3/Size272x202/1338113.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="other-news">
+            <div class="bomba-subtitle">
+              <div class="league-title">
+                <a href="https://www.sport5.co.il/liga.aspx?FolderID=11249"
+                  >יורוסטפ-פוד</a
+                >
+              </div>
+              <div class="bomba-article-title">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11252&amp;docID=455245"
+                  target="_self"
+                  >"ההגנה מעניינת אותם?: "כאב הראש של מכבי</a
+                >
+              </div>
+              <div class="bomba-content">
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11252&amp;docID=455245"
+                  target="_self"
+                  >האזינו ליורוסטפ-פוד: בעיות הצהובים, ההצגה של האקס הפועל
+                  ותופעת וירטוס</a
+                >
+              </div>
+              <div class="author-time-box">
+                <div>10.12.23</div>
+                <div>מערכת הרדיו</div>
+              </div>
+              <div class="comment">12</div>
+            </div>
+
+            <div class="profile-article" style="position: relative">
+              <a
+                href="https://www.sport5.co.il/articles.aspx?FolderID=11252&docID=455245"
+                target="_self"
+              >
+                <img
+                  src="https://www.sport5.co.il/Sip_Storage/FILES/4/Size272x202/1337324.jpg"
+                  class="img-res"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="last-row-2"></div>
+    <div class="holder">
+      <div class="last-container">
+        <div class="general-div">
+          <div class="frame">
+            <div class="general-t">כללי</div>
+            <ul>
+              <li>
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11202&amp;docID=425624"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >צור קשר</a
+                >
+              </li>
+              <li>
+                <a href="mailto:yaniv_o@Sport5.co.il" style="font-weight: bold"
+                  >פרסם אצלנו</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://dreamteam.sport5.co.il"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >ליגת החלומות</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fantasyleague.sport5.co.il"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >ליגת פנטזי</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/html/pages/GamesResults.html"
+                  style="font-weight: bold"
+                  >תוצאות</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/world.aspx?FolderID=7162"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >עולם הרכב</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.sport5.co.il/articles.aspx?FolderID=11202&amp;docID=425839"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >הצהרת נגישות</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/articles.aspx?FolderID=413&amp;docID=50633"
+                  style="font-weight: bold"
+                  >תקנון</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.knesset.tv"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >לאתר ערוץ כנסת</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="additional-branches-div">
+          <div class="frame">
+            <div class="additional-branches-t">ענפים נוספים</div>
+            <ul>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=410"
+                  style="font-weight: bold"
+                  >טניס</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/ligahandball.aspx?FolderID=615"
+                  style="font-weight: bold"
+                  >כדוריד</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=1715"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >כדורעף</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=4168"
+                  style="font-weight: bold"
+                  >ג'ודו</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=1630"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >אתלטיקה</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.sport5.co.il/liga.aspx?FolderID=2910"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >אופניים</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=1658"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >שחייה</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.sport5.co.il/liga.aspx?FolderID=7197"
+                  style="font-weight: bold"
+                  >ספורט מוטורי</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="basketball-div">
+          <div class="frame">
+            <div class="basketball-t">כדורסל</div>
+            <ul>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=273"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >ליגת העל</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=404"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >יורוליג</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://nba.sport5.co.il/NBA.aspx?FolderId=402"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >NBA</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=281"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >נבחרות ישראל</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=1356"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >הליגה הלאומית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=279"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >ליגת העל נשים</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=406"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >יורוקאפ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=280"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >גביע המדינה</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="isreal-football-div">
+          <div class="frame">
+            <div class="isreal-football-t">כדורגל ישראלי</div>
+            <ul>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=44"
+                  style="font-weight: bold"
+                  >ליגת העל</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=80"
+                  style="font-weight: bold"
+                  >ליגה לאומית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=284"
+                  style="font-weight: bold"
+                  >נבחרת ישראל</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=216"
+                  style="font-weight: bold"
+                  >גביע המדינה</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=215"
+                  style="font-weight: bold"
+                  >גביע הטוטו</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=2790"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >ליגת העל לנוער</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=1503"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >נבחרות צעירות</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://doublepass.sport5.co.il"
+                  style="font-weight: bold"
+                  >דאבל פס-ליגות נמוכות</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="international-football-div">
+          <div class="frame">
+            <div class="international-football-t">כדורגל עולמי</div>
+            <ul>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=397"
+                  style="font-weight: bold"
+                  >ליגת האלופות</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=377"
+                  style="font-weight: bold"
+                  >ליגה ספרדית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=251"
+                  style="font-weight: bold"
+                  >ליגה אנגלית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=375"
+                  style="font-weight: bold"
+                  >ליגה איטלקית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=608"
+                  style="font-weight: bold"
+                  >ליגה גרמנית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=495"
+                  style="font-weight: bold"
+                  >ליגה צרפתית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=400"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >הליגה האירופית</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sport5.co.il/liga.aspx?FolderID=8572"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >ליגת האומות</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="vod-container">
+          <div class="frame">
+            <div class="VOD-t">VOD</div>
+            <ul>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=3968"
+                  style="font-weight: bold"
+                  >חדשות הספורט</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=8577"
+                  style="font-weight: bold"
+                  >מועדון כדורגל FC</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=8595"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >חמישיות</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=8559"
+                  style="font-weight: bold"
+                  >תקצירי ליגת האלופות</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=3783"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >ליגת העל בכדורגל</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=8593"
+                  style="font-weight: bold"
+                  >ליגת העל בכדורסל</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=8600"
+                  style="font-weight: bold"
+                  target="_blank"
+                  >מכבי ת"א ביורוליג</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vod.sport5.co.il/?Vc=5459"
+                  style="font-weight: bold; direction: rtl"
+                  >תקצירי NBA</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="logo-matrix">
+        <a href="https://www.matrixdigital.co.il" target="_blank"
+          ><img src="https://www.sport5.co.il/Images/matrix.png"
+        /></a>
+      </div>
+    </div>
+
+    <script src="scripts/header.js"></script>
+  </body>
+</html>
